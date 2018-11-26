@@ -15,11 +15,17 @@ public class Orderr implements Serializable{
 	@Id
 	@GeneratedValue
 	private Long orderID;
+	@Column(nullable = false)
 	private String userID;
+	@Column(nullable = false)
 	private Date time;
+	@Column(nullable = false)
 	private String address;
+	@Column(nullable = false)
 	private String addressee;
+	@Column(nullable = false)
 	private String contact;
+	@Column(nullable = false)
 	private String state;
 	
 	public Orderr() {

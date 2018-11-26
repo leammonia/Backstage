@@ -1,6 +1,6 @@
 package com.pm.globalGO.controller;
 import com.pm.globalGO.domain.PictureRepository;
 
-public class PictureController implements PictureRepository{
+public class PictureController{
 
 }
