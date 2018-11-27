@@ -100,6 +100,7 @@ public class UserController{
 	@ResponseBody
 	@PostMapping(path = "/v1/register")
 	public String register(@RequestBody String jsonstr) {
+		System.out.println("register");
 		JSONObject jsonObject = JSONObject.parseObject(jsonstr);
 		String userID = jsonObject.getString("userID");
 		String password = jsonObject.getString("password");	
@@ -124,6 +125,7 @@ public class UserController{
 	@ResponseBody
 	@PostMapping(path = "/v1/login")
 	public String login(@RequestBody String jsonstr) {
+		System.out.println("login");
 		JSONObject jsonObject = JSONObject.parseObject(jsonstr);
 		String userID = jsonObject.getString("userID");
 		String password = jsonObject.getString("password");

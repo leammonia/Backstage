@@ -13,6 +13,7 @@ public class GlobalGoApplication {
 	
 	
 	public static void main(String[] args) {
+		System.out.println("GlobalGO run.");
 		SpringApplication.run(GlobalGoApplication.class, args);
 	}
 }
